@@ -4,8 +4,8 @@ wrapPrim: aBlock countingArgs: countArgs
 	self flag: #operativeArguments.
 	^QoppaOperative new
 		isPrimitive: true;
-		block: [:env :args | |evaluatedArgs|
-			args := args ifNil: [QoppaWCons empty].
+		block: [:env :a | | evaluatedArgs args |
+			args := a ifNil: [QoppaWCons empty].
 			evaluatedArgs := (args collect: [:arg| self eval: arg in: env]).
 			countArgs
 				ifFalse: [aBlock value: evaluatedArgs]
