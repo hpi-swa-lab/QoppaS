@@ -4,7 +4,7 @@
 	"instance" : {
 		"buildWindowWith:" : "bak 2/1/2017 13:01",
 		"buildWith:" : "bak 2/16/2017 22:41",
-		"doDebugHistoryItem" : "bak 2/16/2017 23:23",
+		"doDebugHistoryItem" : "tobe 1/6/2021 15:50",
 		"doRedoHistoryItem" : "bak 2/16/2017 22:40",
 		"history" : "bak 1/31/2017 17:28",
 		"history:" : "jr 2/1/2016 14:42",
@@ -15,7 +15,7 @@
 		"interpreter" : "jr 2/1/2016 14:42",
 		"interpreter:" : "jr 2/1/2016 14:42",
 		"lastClickedHistoryItem:" : "bak 2/16/2017 22:42",
-		"readAndEvaluate:" : "bak 1/31/2017 17:48",
+		"readAndEvaluate:" : "tobe 1/6/2021 15:49",
 		"readAndEvaluateInput" : "bak 2/1/2017 13:00",
 		"selectedHistoryItemIndex" : "bak 2/16/2017 22:41",
 		"shouldInputBeEvaluated:" : "bak 2/1/2017 13:38",

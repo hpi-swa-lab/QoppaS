@@ -1,4 +1,4 @@
 actions
 doDebugHistoryItem
-	TBMLD step: ([self readAndEvaluate: lastClickedHistoryItem evaluatedExpression]
+	(Smalltalk at: #TBMLD) step: ([self readAndEvaluate: lastClickedHistoryItem evaluatedExpression]
 		asContext stepIntoMethod: QoppaInterpreter>>#eval:in:)

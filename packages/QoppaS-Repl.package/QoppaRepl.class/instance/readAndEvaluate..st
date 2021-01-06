@@ -1,15 +1,13 @@
 as yet unclassified
 readAndEvaluate: anExpressionString
-	| item |
+	| item eval |
 	item := QoppaReplHistoryItem new.
 	item evaluatedExpression: anExpressionString.
 	item parsedExpression: (QoppaGrammar OhmInstance match: anExpressionString startingFrom: #File).
 	item environment: (interpreter globalEnv shallowCopy).
 	
-	item result: (TBMLD
-		runDebugged: [
-			interpreter readAndEvaluate: anExpressionString asString
-			]).
+	eval := [interpreter readAndEvaluate: anExpressionString asString].
+	item result: (Smalltalk at: #TBMLD ifPresent: [:tbmld | tbmld runDebugged: eval] ifAbsent: eval).
 	
 	history add: item.
 	
