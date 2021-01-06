@@ -1,0 +1,3 @@
+*QoppaS-Core
+isQuoted
+	^false
