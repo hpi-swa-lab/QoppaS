@@ -1,3 +1,0 @@
-toolbuilder
-isSelectedActivationAlive
-	^self selectedActivation isAlive

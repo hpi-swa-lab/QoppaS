@@ -1,0 +1,18 @@
+{
+	"category" : "QoppaS-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "QoppaPrintable classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"car",
+		"cdr",
+		"isQuoted" ],
+	"name" : "QoppaWCons",
+	"pools" : [
+		 ],
+	"super" : "SequenceableCollection",
+	"traitcomposition" : "QoppaPrintable",
+	"type" : "normal" }

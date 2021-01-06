@@ -1,3 +1,0 @@
-*MultilevelDebugger
-isContextNode
-	^ false

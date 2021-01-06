@@ -1,3 +1,0 @@
-*QoppaS-Verifier
-hilPc
-	^ hilPc

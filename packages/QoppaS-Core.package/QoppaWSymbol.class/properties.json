@@ -1,0 +1,17 @@
+{
+	"category" : "QoppaS-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "QoppaPrintable classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"content",
+		"isQuoted" ],
+	"name" : "QoppaWSymbol",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "QoppaPrintable",
+	"type" : "normal" }

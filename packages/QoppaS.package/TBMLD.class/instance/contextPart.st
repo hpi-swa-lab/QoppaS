@@ -1,3 +1,0 @@
-accessors
-contextPart
-	^debugger contextStackTop

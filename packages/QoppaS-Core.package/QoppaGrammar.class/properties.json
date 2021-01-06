@@ -1,0 +1,14 @@
+{
+	"category" : "QoppaS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "bak 11/5/2015 09:17",
+	"instvars" : [
+		 ],
+	"name" : "QoppaGrammar",
+	"pools" : [
+		 ],
+	"super" : "OhmGrammarSmalltalkProxy",
+	"type" : "normal" }

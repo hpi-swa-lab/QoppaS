@@ -1,3 +1,0 @@
-verifiers
-verifiers
-	^verifiers

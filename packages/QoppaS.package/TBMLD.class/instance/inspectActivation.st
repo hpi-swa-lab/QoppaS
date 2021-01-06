@@ -1,3 +1,0 @@
-actions
-inspectActivation
-	self selectedActivation inspect

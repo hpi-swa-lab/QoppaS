@@ -1,3 +1,0 @@
-toolbuilder
-selectedActivationChanged
-	^self

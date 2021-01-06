@@ -1,3 +1,0 @@
-activations
-activationHasChildren: activation
-	^activation hasChildren

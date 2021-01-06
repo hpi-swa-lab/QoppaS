@@ -1,3 +1,0 @@
-actions
-debugger
-	^repo debugger

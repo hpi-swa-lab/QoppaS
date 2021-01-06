@@ -1,0 +1,6 @@
+OrderedDictionary {
+	'packages/BaselineOfQoppaS.package' : #SquotCypressCodeSerializer,
+	'packages/QoppaS-Core.package' : #SquotCypressCodeSerializer,
+	'packages/QoppaS-Repl.package' : #SquotCypressCodeSerializer,
+	'packages/QoppaS-Tests.package' : #SquotCypressCodeSerializer
+}

@@ -1,1 +1,0 @@
-A DebuggerLevel is an extension to the Multilevel Debugger. It can be implemented to change the way, the debugger displays debugged context.

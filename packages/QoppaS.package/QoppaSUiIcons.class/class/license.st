@@ -1,4 +1,0 @@
-license
-license
-
-	self subclassResponsibility.
