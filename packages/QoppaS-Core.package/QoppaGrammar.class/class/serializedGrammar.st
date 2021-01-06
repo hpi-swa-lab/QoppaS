@@ -29,7 +29,7 @@ escaped_char
 lineTerminator
   = "\n" | "\r" | "\r\n"| "\u2028" | "\u2029"
 
-number  -- number
+number
     = "-"? digit+ ("." digit+)?
 
 space
