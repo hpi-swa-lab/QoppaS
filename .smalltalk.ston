@@ -3,12 +3,8 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'QoppaS',
       #directory : 'packages',
-      #platforms : [ #squeak ]
+      #platforms : [ #squeak ],
+	  #load : 'TravisCI'
     }
-  ],
-  #testing : {
-    #exclude : {
-      #classes : [ #MLDComparingVerifierTest ]
-    }
-  }
+  ]
 }
