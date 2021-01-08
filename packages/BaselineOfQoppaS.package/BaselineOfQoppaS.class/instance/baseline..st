@@ -8,8 +8,8 @@ baseline: spec
 				baseline: 'Ohm' with: [ spec repository:  'github://hpi-swa/ohm-s/packages' ];
 				
 				package: 'QoppaS-Core' with: [spec requires: #('libraries')];
-				package: 'QoppaS-Tests' with: [spec requires: #('QoppaS-Core')];
 				package: 'QoppaS-Repl' with: [spec requires: #('QoppaS-Core')];
+				package: 'QoppaS-Tests' with: [spec requires: #('QoppaS-Core' 'QoppaS-Repl')];
 				yourself.
 			spec
 				group: 'default' with: #('QoppaS-Core' 'ui');
