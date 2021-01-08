@@ -1,5 +1,7 @@
 interpreting
 eval: expression in: env
+	expression isBoolean
+		ifTrue: [^expression].
 	expression isNumber
 		ifTrue: [^expression].
 	expression isQuoted

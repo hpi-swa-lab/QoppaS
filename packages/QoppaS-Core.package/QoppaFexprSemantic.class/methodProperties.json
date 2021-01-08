@@ -13,6 +13,7 @@
 		"SExpressionSimpleQuoted:with:withExpression:" : "jr 2/1/2016 16:04",
 		"addSource:for:" : "jr 2/2/2016 01:00",
 		"atom:with:" : "bak 10/30/2015 13:54",
+		"atomBoolean:with:with:" : "tobe 1/8/2021 23:53",
 		"atomNull:with:" : "jr 2/1/2016 14:15",
 		"atomNumber:with:" : "bak 11/10/2015 14:44",
 		"atomString:with:with:with:" : "jr 2/1/2016 14:19",
