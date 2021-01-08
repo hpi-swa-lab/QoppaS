@@ -18,3 +18,5 @@ Metacello new
   load.
 ```
 
+# Notes
+This project was originally developed as part of a [project to enable multi-level debugging](https://github.com/abstraktor/multileveldebugging-QoppaS).
