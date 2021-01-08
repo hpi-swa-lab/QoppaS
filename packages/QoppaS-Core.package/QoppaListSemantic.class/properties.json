@@ -10,5 +10,5 @@
 	"name" : "QoppaListSemantic",
 	"pools" : [
 		 ],
-	"super" : "AnObsoleteOhmSemanticAction",
+	"super" : "OhmSemanticAction",
 	"type" : "normal" }
