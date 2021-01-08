@@ -1,5 +1,5 @@
 language: smalltalk
 sudo: false
 smalltalk:
-  - Squeak-trunk
-  - Squeak-5.3
+  - Squeak64-trunk
+  - Squeak64-5.3
