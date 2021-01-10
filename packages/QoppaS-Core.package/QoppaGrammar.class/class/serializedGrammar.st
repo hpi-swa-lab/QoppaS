@@ -12,14 +12,14 @@ List
 SExpression
   = List   -- list
    | atom -- atom
-   | "''" SExpression -- simple_quoted
+   | "''" List -- simple_quoted
    | "`" SExpression  -- quasi_quoted
 
 atom
   = number -- number
    | "#" ("t" | "f") -- boolean
    | "''" standard_char+ -- symbol
-   | "\"" (escaped_char|standard_char|space)+ "\"" -- string
+   | "\"" (escaped_char|standard_char|space|"''")* "\"" -- string
    | "null" ~ standard_char -- null
    | standard_char+  -- variable
 

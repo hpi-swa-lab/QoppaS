@@ -130,6 +130,12 @@ prelude
         z
         (f (car xs) (foldr f z (cdr xs)))))
 
+(define (filter f z)
+    (cond
+		((null? z) z)
+		((not (f (car z))) (filter f (cdr z)))
+		(else (cons (car z) (filter f (cdr z))))))
+
 (define (append a b)
     (foldr cons b a))
 
