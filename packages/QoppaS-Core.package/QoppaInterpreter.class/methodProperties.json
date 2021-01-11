@@ -4,10 +4,10 @@
 	"instance" : {
 		"bind:to:" : "bak 9/21/2017 19:34",
 		"boolPrim" : "jr 2/1/2016 15:33",
-		"buildGlobalEnv" : "bak 2/16/2017 19:20",
+		"buildGlobalEnv" : "tobe 1/10/2021 16:29",
 		"cons:with:" : "jr 2/1/2016 14:58",
-		"eval:in:" : "bak 3/8/2017 11:46",
-		"falseValue" : "jr 2/1/2016 14:27",
+		"eval:in:" : "tobe 1/8/2021 23:48",
+		"falseValue" : "tobe 1/8/2021 23:48",
 		"globalEnv" : "jr 2/1/2016 13:54",
 		"globalEnv:" : "jr 2/1/2016 13:54",
 		"haltPrimitive" : "jr 2/1/2016 15:34",
@@ -20,8 +20,8 @@
 		"reader" : "jr 2/1/2016 13:54",
 		"reader:" : "jr 2/1/2016 13:54",
 		"toQoppaBoolean:" : "jr 2/1/2016 14:38",
-		"trueValue" : "jr 2/1/2016 14:38",
+		"trueValue" : "tobe 1/8/2021 23:48",
 		"vau:withParameters:withEnvironmentParameter:in:" : "bak 9/21/2017 19:34",
 		"vauPrim" : "jr 2/1/2016 15:34",
 		"wrapKeysIn:" : "jr 2/2/2016 01:39",
-		"wrapPrim:countingArgs:" : "tobe 1/6/2021 15:18" } }
+		"wrapPrim:countingArgs:" : "tobe 1/10/2021 15:54" } }

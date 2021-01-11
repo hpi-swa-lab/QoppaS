@@ -1,3 +1,3 @@
 as yet unclassified
 testFails
-	self assert: nil equals:(self readAndEvaluate: '"1')
+	self should: [self readAndEvaluate: '"1'] raise: OhmMatchFailure

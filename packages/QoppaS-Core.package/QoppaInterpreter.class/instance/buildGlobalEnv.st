@@ -2,14 +2,17 @@ environments
 buildGlobalEnv
 	^QoppaWCons withCar: (QoppaWCons newAssociationListFrom: (self wrapKeysIn: {
 		#vau -> self vauPrim.
-		#+ -> (self wrapPrim: [:args| args reduce: [:a :b| a + b] ifEmpty: [0]] countingArgs: false).
-		#-  -> (self wrapPrim: [:args| args reduce: [:a :b| a - b]] countingArgs: false).
-		#*  -> (self wrapPrim: [:args| args reduce: [:a :b| a * b] ifEmpty: [1]] countingArgs: false).
+		#+ -> (self wrapPrim: [:args| args inject: 0 into: [:a :b| a + b]] countingArgs: false).
+		#-  -> (self wrapPrim: [:args| args size = 1 ifTrue: [args first negated] ifFalse: [args reduce: [:a :b| a - b]]] countingArgs: false).
+		#*  -> (self wrapPrim: [:args| args inject: 1 into: [:a :b| a * b]] countingArgs: false).
 		#/   -> (self wrapPrim: [:args| args reduce: [:a :b| a / b]] countingArgs: false).
 		#quo   -> (self wrapPrim: [:a :b| a \\ b] countingArgs: true).
 		#<=  -> (self wrapPrim: [:args| self toQoppaBoolean: (args reduce: [:a :b| a <= b])] countingArgs: false).
+		#>  -> (self wrapPrim: [:args| self toQoppaBoolean: (args reduce: [:a :b| a > b])] countingArgs: false).
+		#>=  -> (self wrapPrim: [:args| self toQoppaBoolean: (args reduce: [:a :b| a >= b])] countingArgs: false).
 		#<  -> (self wrapPrim: [:args| self toQoppaBoolean: (args reduce: [:a :b| a < b])] countingArgs: false).
 		#=  -> (self wrapPrim: [:args| self toQoppaBoolean: (args reduce: [:a :b| a = b])] countingArgs: false).
+		#'eq?' -> (self wrapPrim: [:args| self toQoppaBoolean: (args reduce: [:a :b| a = b])] countingArgs: false).
 		
 		#cons -> (self wrapPrim: [:car :cdr| QoppaWCons withCar: car cdr: cdr] countingArgs: true).
 		#car -> (self wrapPrim: [:cons| cons car] countingArgs: true).
@@ -27,4 +30,6 @@ buildGlobalEnv
 		#operate -> (self wrapPrim: [:env :operative :operands| self operate: operative on: operands in: env] countingArgs: true).
 		#halt -> self haltPrimitive.
 		#load -> self loadPrimitive.
+		#display -> (self wrapPrim: [:operand| Transcript show: operand. operand] countingArgs: true).
+		#newline -> (self wrapPrim: [Transcript cr] countingArgs: true).
 	})).

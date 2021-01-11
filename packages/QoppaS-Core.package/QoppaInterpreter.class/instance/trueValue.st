@@ -1,3 +1,3 @@
 built-in objects
 trueValue
-	^ #t
+	^ true

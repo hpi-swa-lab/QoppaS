@@ -11,6 +11,6 @@ wrapPrim: aBlock countingArgs: countArgs
 				ifFalse: [aBlock value: evaluatedArgs]
 				ifTrue: [		
 					aBlock numArgs = args size
-					ifTrue: [ aBlock valueWithArguments: evaluatedArgs]
+					ifTrue: [ aBlock valueWithArguments: evaluatedArgs asArray]
 					ifFalse: [ QoppaArityMismatchError signal: 'ArityMismatch for', aBlock]]];
 		yourself
