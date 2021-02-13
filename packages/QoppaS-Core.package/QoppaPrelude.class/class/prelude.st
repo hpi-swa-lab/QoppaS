@@ -108,13 +108,19 @@ prelude
 (define or  (and-or #f))
 (define and (and-or #t))
 
+(define (eval-list eval env l)
+	(let ((val (eval env (car l))))
+		(if (null? (cdr l))
+			val
+			(eval-list eval env (cdr l)))))
+
 (define cond (vau alts env
     (if (null? alts)
         #f
-        (let (( ((test body) . rest) alts ))
+        (let (( ((test . body) . rest) alts ))
             (if (or (eq?  test ''else)
                     (eval env test))
-                (eval env body)
+                (eval-list eval env body)
                 (eval env (cons cond rest)))))))
 
 (define (assq key alist) (cond

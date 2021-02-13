@@ -30,6 +30,8 @@ buildGlobalEnv
 		#operate -> (self wrapPrim: [:env :operative :operands| self operate: operative on: operands in: env] countingArgs: true).
 		#halt -> self haltPrimitive.
 		#load -> self loadPrimitive.
+		#error -> (self wrapPrim: [:args| self error: (args joinSeparatedBy: ' ')] countingArgs: false).
+		#random -> (self wrapPrim: [:low :high| low + (high - low) atRandom - 1] countingArgs: true).
 		#display -> (self wrapPrim: [:operand| Transcript show: operand. operand] countingArgs: true).
 		#newline -> (self wrapPrim: [Transcript cr] countingArgs: true).
 	})).
