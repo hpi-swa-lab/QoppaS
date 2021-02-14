@@ -19,12 +19,17 @@ atom
   = number -- number
    | "#" ("t" | "f") -- boolean
    | "''" standard_char+ -- symbol
-   | "\"" (escaped_char|standard_char|space|"''"|"("|")"|":"|","|"#")* "\"" -- string
+   | "\"" string_char* "\"" -- string
    | "null" ~ standard_char -- null
    | standard_char+  -- variable
 
+string_char
+	= ~("\"" | "\\") any
+	| escaped_char
+
 escaped_char 
   = "\\\\" -- backslash
+   | "\\\"" -- escaped_quote
    | "\\" standard_char -- escaped
 
 lineTerminator
