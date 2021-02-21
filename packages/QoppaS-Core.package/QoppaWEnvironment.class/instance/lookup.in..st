@@ -2,7 +2,7 @@ printing
 lookup: aSymbol in: anEnvironment
 	| lookupInParentFrameBlock |
 	
-	anEnvironment ifNil: [self signalUnboundVariable: aSymbol].
+	anEnvironment ifNil: [^ self signalUnboundVariable: aSymbol].
 
 	lookupInParentFrameBlock := [^self lookup: aSymbol in: anEnvironment cdr].
 	anEnvironment car

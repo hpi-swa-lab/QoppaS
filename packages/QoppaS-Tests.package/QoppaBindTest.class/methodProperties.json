@@ -8,4 +8,5 @@
 		"testBindNil" : "jr 2/1/2016 13:40",
 		"testBindPlaceholder" : "jr 2/1/2016 13:40",
 		"testBindRightNil" : "bak 9/21/2017 19:18",
-		"testBindSymbol" : "bak 2/1/2017 19:46" } }
+		"testBindSymbol" : "bak 2/1/2017 19:46",
+		"testExternalBinding" : "tobe 2/21/2021 09:37" } }

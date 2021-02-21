@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "bak 11/5/2015 09:19",
 	"instvars" : [
-		 ],
+		"variableName" ],
 	"name" : "QoppaUnboundVariableFailure",
 	"pools" : [
 		 ],
