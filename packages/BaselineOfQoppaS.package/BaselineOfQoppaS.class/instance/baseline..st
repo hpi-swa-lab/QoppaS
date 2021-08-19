@@ -5,7 +5,7 @@ baseline: spec
 		for: #common
 		do: [
 			spec
-				baseline: 'Ohm' with: [ spec repository:  'github://hpi-swa/ohm-s/packages' ];
+				baseline: 'Ohm' with: [ spec repository: 'github://hpi-swa/Ohm-S:master/packages' ];
 				
 				package: 'QoppaS-Core' with: [spec requires: #('libraries')];
 				package: 'QoppaS-Repl' with: [spec requires: #('QoppaS-Core')];
